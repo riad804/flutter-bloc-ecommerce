@@ -1,5 +1,4 @@
-import 'dart:ui';
-
+import 'package:bloc_ecommerce/core/extensions/context_extension.dart';
 import 'package:flutter/widgets.dart';
 
 abstract class CoreUtils {
@@ -10,8 +9,6 @@ abstract class CoreUtils {
     required Color lightModeColor,
     required Color darkModeColor,
   }) {
-    return MediaQuery.platformBrightnessOf(context) == Brightness.dark
-        ? darkModeColor
-        : lightModeColor;
+    return context.isDarkMode ? darkModeColor : lightModeColor;
   }
 }
