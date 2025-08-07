@@ -9,6 +9,6 @@ abstract class CoreUtils {
     required Color lightModeColor,
     required Color darkModeColor,
   }) {
-    return context.isDarkMode ? darkModeColor : lightModeColor;
+    return context.isDarkMode ? darkModeColors : lightModeColor;
   }
 }
