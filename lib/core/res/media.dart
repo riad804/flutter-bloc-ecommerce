@@ -1,8 +1,8 @@
 abstract class Media {
   const Media();
 
-  static const _baseImage = 'assets/images/';
-  static const _baseLottie = 'assets/lottie/';
+  static const _baseImage = 'assets/images';
+  static const _baseLottie = 'assets/lottie';
 
   static const onBoardingFemale = '$_baseImage/on_boarding_female.png';
   static const onBoardingMale = '$_baseImage/on_boarding_male.png';
